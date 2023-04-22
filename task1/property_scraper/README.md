@@ -19,7 +19,7 @@ HTML parsing is sound decision, because resource doesn't have an API.
 
 ### 3) Propose some mechanism for data caching that will allow you to rerun data transformation without data extraction, when data transformation fails.
 
-Persistent storage on some RDBMS. Data from the most recent runs can be cached in memory - for instance, in Redis.
+Persistent storage on some RDBMS. Data from the most recent runs can be cached in memory - for instance, in aid of Redis.
 
 ### 4) Describe all third-party tools (like AWS S3, AWS RDS) that you plan to use in your pipeline.
 
@@ -31,6 +31,6 @@ Persistent storage on some RDBMS. Data from the most recent runs can be cached i
 
 ### 5) Analyze weak points in your pipeline (for tasks that would have potentially large execution time) and propose improvements that can be done in future.
 
-- As web resources may have limitation related to request amount, we should track the number of requests and does not exceed it.
-- Requesting and downloading HTML pages could take some time, so we won`t have immediate result as in streaming.
+- As web resources may have limitation related to request amount threshold, we should track the number of requests and does not exceed it.
+- We won`t have immediate result as in streaming, as requesting and downloading HTML pages could take some time.
 - To mitigate previously mentioned drawback we can execute our requests in multiple threads.
