@@ -31,6 +31,6 @@ Persistent storage on some RDBMS. Data from the most recent runs can be cached i
 
 ### 5) Analyze weak points in your pipeline (for tasks that would have potentially large execution time) and propose improvements that can be done in future.
 
-As web resources may have limitation related to request amount, we should track the number of requests and don`t exceed it.
+As web resources may have limitation related to request amount, we should track the number of requests and does not exceed it.
 Requesting and downloading HTML pages could take some time, so we won`t have immediate result as in streaming.
 To mitigate previously mentioned drawback we can execute our requests in multiple threads.
