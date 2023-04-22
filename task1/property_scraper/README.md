@@ -2,8 +2,6 @@
 
 ### 1) Present diagram of DAG and explain responsibility of each task in the DAG.
 
-![alt text](https://github.com/alexzarembovskiy/Airflow/tree/main/task1/property_scraper/dag_diagram.drawio.png?raw=true)
-
 - *check_resources* - make a request to web resources to check the availability;
 - *extract_Austin_region_URL* - make a request to resource to get Austin region;
 - *download_Austin_region_pages* - download region HTML pages;
