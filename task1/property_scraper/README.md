@@ -25,7 +25,7 @@ Persistent storage on some RDBMS. Data from the most recent runs can be cached i
 ### 4) Describe all third-party tools (like AWS S3, AWS RDS) that you plan to use in your pipeline.
 
 - AWS S3 - storing raw HTML pages;
-- AWS RDS (Postgres) - storing URLs, metadata about processed HTML pages and historical data;
+- AWS RDS (Postgres) - storing URLs and transformed historical data from HTML pages;
 - AWS MemoryDB (Redis) - storing data from the most recent runs.
 
 ### 5) Analyze weak points in your pipeline (for tasks that would have potentially large execution time) and propose improvements that can be done in future.
